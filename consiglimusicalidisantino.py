@@ -41,9 +41,9 @@ RANDOM_SEED = 42
 
 np.random.seed(RANDOM_SEED)
 
-"""VAI A QUESTO URL: https://accounts.google.com/o/oauth2/auth?client_id=947318989803-6bn6qk8qdgf4n4g3pfee6491hc0brc4i.apps.googleusercontent.com&redirect_uri=urn%3Aietf%3Awg%3Aoauth%3A2.0%3Aoob&scope=email%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fdocs.test%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fdrive%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fdrive.photos.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fpeopleapi.readonly&response_type=code
+"""VAI A QUESTO URL https://accounts.google.com/o/oauth2/auth?client_id=947318989803-6bn6qk8qdgf4n4g3pfee6491hc0brc4i.apps.googleusercontent.com&redirect_uri=urn%3Aietf%3Awg%3Aoauth%3A2.0%3Aoob&scope=email%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fdocs.test%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fdrive%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fdrive.photos.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fpeopleapi.readonly&response_type=code
 
-E INSERISCI IL CODICE QUI:
+E INSERISCI IL CODICE QUI
 ------->
 /content/drive
 """
@@ -155,7 +155,7 @@ for i, t in enumerate(labels):
     if t in top_artists:
         ax.annotate(t,(x[i],y[i]))
 
-"""***PREPROCESSING***"""
+"""***PRE PROCESSAMENTO DEI DATI***"""
 
 pc = ap.playCount
 play_count_scaled = (pc - pc.min()) / (pc.max() - pc.min())
@@ -253,7 +253,7 @@ plt.legend()
 plt.grid()
 plt.show()
 
-"""### **EFFETTUIAMO LA RACCOMANDAZIONE MUSICALE**"""
+"""### **EFFETTUIAMO LA RACCOMANDAZIONE DEGLI ARTISTI**"""
 
 user_id = 1236
 user_index = ratings_df.index.get_loc(user_id)
